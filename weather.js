@@ -38,7 +38,7 @@ function dayOfTheWeek(day, month,year){
 
 //function to fetch data from API
 function fetchWeatherData(){
-    fetch(`http://api.weatherstack.com/current?access_key=560196431d0724490a46978d9a2eedde&query=${cityInput}`)
+    fetch(`http://api.weatherstack.com/current?access_key=your-access-key&query=${cityInput}`)
     .then(response => response.json())
     .then(data =>{
         console.log(data);
