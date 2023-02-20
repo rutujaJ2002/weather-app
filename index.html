@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">The Weather</h3>
+
+            <div >
+                <h1 class="temp">16&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name">Pune</h1>
+                    <small>
+                        <!-- <span class="day"></span> -->
+                        <span class="date">
+                            Feb 17 2023
+                        </span>
+                    </small>
+                </div>
+
+                <div class="weather">
+                    <i class="fas fa-sun"
+                    width="50"
+                    height="50"></i> &nbsp;
+                    <span class="condition">Sunny</span>
+                </div>
+            </div>
+        </div>
+
+    <div class="panel">
+        <form  id="locip">
+            <input type="text" name="location" placeholder="Search location" class="search">
+            <button id="searchbtn" type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <ul class="details">
+            <h3>Weather Details</h3>
+            <li>
+                <span>Cloudy : </span>
+                <span class="cloud">0</span>
+            </li>
+            <li>
+                <span>Humidity : </span>
+                <span class="humidity">40</span>
+            </li>
+            <li>
+                <span>Wind :</span>
+                <span class="wind">80</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="/weather.js"></script>
+</body>
+</html>
